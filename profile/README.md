@@ -4,7 +4,8 @@ https://azzurro.tech
 info@azzurro.tech
 
 At Azzurro Technology we design, audit develop and support various different types of software for any type of business.
-We offer direct 
+
+We offer to our clients
   1) Software-as-a-Service and Platform-as-a-Service Solutions to our clients leveraging open source technoogies.
   2) System Analysis Service to identify solutions based on current and desired client systems and/or assess usability of a given system.
   3) Bespoke Development Service to build or modify a system for a client to use in their operations.
