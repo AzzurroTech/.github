@@ -15,4 +15,4 @@ Our overall focus is on open source and open core software, however we do work w
 
 Our primary goal is to ensure the best system possible is built for our clients.
 
-Contact us on Linkedin, our Website, via email (info@azzurro.tech) or call our Core Developer directly at +1 (514) 430-9542
+Contact us on Linkedin, our Website, via email (info@azzurro.tech) or call our Core Developer directly at +1 (905) 246-0113
