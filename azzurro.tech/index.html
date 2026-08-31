@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azzurro Tech - Modern Web Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Azzurro Tech Logo" onerror="this.src='https://via.placeholder.com/150x50/0066cc/white?text=AZZURRO+TECH'">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#components" class="nav-link">Components</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn btn-secondary" onclick="showLoginModal()">Sign In</button>
+                <button class="btn btn-primary" onclick="showSignupModal()">Get Started</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">The Complete Web Platform Stack</h1>
+                <p class="hero-subtitle">AzzurroTech combines the power of AzzurroTech projects (Go-based services) and Emperor42 projects (JavaScript web components) into one seamless platform.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large" onclick="scrollToSection('services')">Explore Services</button>
+                    <button class="btn btn-secondary btn-large" onclick="showDemoModal()">Watch Demo</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Platform Services</h2>
+                <p class="section-subtitle">Enterprise-grade solutions for modern web applications</p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/data.png" alt="Data Platform" onerror="this.src='https://via.placeholder.com/64/0066cc/white?text=DATA'">
+                        </div>
+                        <h3 class="service-title">Stenella Data Platform</h3>
+                        <p class="service-description">Enterprise data aggregation and normalization from multiple sources with real-time processing.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Data Integration</span>
+                            <span class="feature-tag">Real-time Processing</span>
+                            <span class="feature-tag">Multi-source</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="useService('stenella')">Learn More</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/security.png" alt="Security" onerror="this.src='https://via.placeholder.com/64/0066cc/white?text=SEC'">
+                        </div>
+                        <h3 class="service-title">Shepherd Security</h3>
+                        <p class="service-description">Comprehensive firewall protection and automated client billing with advanced security controls.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Firewall Rules</span>
+                            <span class="feature-tag">Access Control</span>
+                            <span class="feature-tag">Automated Billing</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="useService('shepherd')">Learn More</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/auth.png" alt="Authentication" onerror="this.src='https://via.placeholder.com/64/0066cc/white?text=AUTH'">
+                        </div>
+                        <h3 class="service-title">Song Authentication</h3>
+                        <p class="service-description">Magic link-based passwordless authentication with device tracking and security features.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Passwordless</span>
+                            <span class="feature-tag">Magic Links</span>
+                            <span class="feature-tag">Device Security</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="useService('song')">Learn More</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/database.png" alt="Database" onerror="this.src='https://via.placeholder.com/64/0066cc/white?text=DB'">
+                        </div>
+                        <h3 class="service-title">Pod Database</h3>
+                        <p class="service-description">HTML form-based database system with SQLite backend, no schema or configuration required.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">No-SQL Forms</span>
+                            <span class="feature-tag">SQLite Backup</span>
+                            <span class="feature-tag">CRUD Operations</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="useService('pod')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="components" class="components-section">
+            <div class="container">
+                <h2 class="section-title">Web Components Integration</h2>
+                <p class="section-subtitle">Emperor42 web components for modern web applications</p>
+
+                <div class="components-grid">
+                    <div class="component-card">
+                        <div class="component-header">
+                            <img src="assets/components/veni.png" alt="VENI" onerror="this.src='https://via.placeholder.com/80/0066cc/white?text=VENI'">
+                            <h3>VENI Web Components</h3>
+                        </div>
+                        <p>JavaScript solution for finding HTML web components with automatic component generation from templates.</p>
+                        <button class="btn btn-primary" onclick="useComponent('veni')">Use VENI</button>
+                    </div>
+
+                    <div class="component-card">
+                        <div class="component-header">
+                            <img src="assets/components/vidi.png" alt="VIDI" onerror="this.src='https://via.placeholder.com/80/0066cc/white?text=VIDI'">
+                            <h3>VIDI Data Visualization</h3>
+                        </div>
+                        <p>Data management and visualization system with card-based displays and CORS-aware data handling.</p>
+                        <button class="btn btn-primary" onclick="useComponent('vidi')">Use VIDI</button>
+                    </div>
+
+                    <div class="component-card">
+                        <div class="component-header">
+                            <img src="assets/components/vici.png" alt="VICI" onerror="this.src='https://via.placeholder.com/80/0066cc/white?text=VICI'">
+                            <h3>VICI Change Management</h3>
+                        </div>
+                        <p>Web-based change management system with WordPress-like admin interface and version control.</p>
+                        <button class="btn btn-primary" onclick="useComponent('vici')">Use VICI</button>
+                    </div>
+
+                    <div class="component-card">
+                        <div class="component-header">
+                            <img src="assets/components/vini.png" alt="VINI" onerror="this.src='https://via.placeholder.com/80/0066cc/white?text=VINI'">
+                            <h3>VINI Workflows</h3>
+                        </div>
+                        <p>JavaScript-based web process definition system for secure programmatic user flow management.</p>
+                        <button class="btn btn-primary" onclick="useComponent('vini')">Use VINI</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <h2 class="section-title">Simple Pricing</h2>
+                <p class="section-subtitle">Choose the perfect plan for your needs</p>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Starter</h3>
+                        <div class="pricing-price">$29<span>/month</span></div>
+                        <ul class="pricing-features">
+                            <li>Stenella Data Platform</li>
+                            <li>Pod Database</li>
+                            <li>VIDI Visualization</li>
+                            <li>Basic Security</li>
+                            <li>24/4 Support</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="selectPlan('starter')">Get Started</button>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">MOST POPULAR</div>
+                        <h3 class="pricing-title">Professional</h3>
+                        <div class="pricing-price">$99<span>/month</span></div>
+                        <ul class="pricing-features">
+                            <li>Everything in Starter</li>
+                            <li>Shepherd Security Suite</li>
+                            <li>Song Authentication</li>
+                            <li>VINI Workflow Builder</li>
+                            <li>Premium Support</li>
+                            <li>Custom Integrations</li>
+                        </ul>
+                        <button class="btn btn-primary btn-large" onclick="selectPlan('professional')">Get Started</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Enterprise</h3>
+                        <div class="pricing-price">$299<span>/month</div>
+                        <ul class="pricing-features">
+                            <li>Everything in Professional</li>
+                            <li>Advanced Security Features</li>
+                            <li>Dedicated Support</li>
+                            <li>Custom Development</li>
+                            <li>On-premise Options</li>
+                            <li>SLAs</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="selectPlan('enterprise')">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get Started Today</h2>
+                <p class="section-subtitle">Ready to transform your web application? Contact us for a free consultation.</p>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <strong>Email:</strong> hello@azzurro.tech
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong> +1 (555) 123-4567
+                        </div>
+                        <div class="contact-item">
+                            <strong>Address:</strong> 123 Tech Street, San Francisco, CA
+                        </div>
+                    </div>
+
+                    <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                        <h3>Send us a message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Company Name">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service">
+                                <option value="">Select Service</option>
+                                <option value="stenella">Stenella Data Platform</option>
+                                <option value="shepherd">Shepherd Security</option>
+                                <option value="song">Song Authentication</option>
+                                <option value="pod">Pod Database</option>
+                                <option value="components">Web Components</option>
+                                <option value="custom">Custom Solution</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Azzurro Tech Platform</h4>
+                    <p>The complete web platform combining AzzurroTech and Emperor42 projects.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Projects</h4>
+                    <ul>
+                        <li><a href="#">Stenella</a></li>
+                        <li><a href="#">Shepherd</a></li>
+                        <li><a href="#">Song</a></li>
+                        <li><a href="#">Pod</a></li>
+                        <li><a href="#">VENI</a></li>
+                        <li><a href="#">VIDI</a></li>
+                        <li><a href="#">VICI</a></li>
+                        <li><a href="#">VINI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:hello@azzurro.tech">hello@azzurro.tech</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Azzurro Technology Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Templates -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('login')">×</span>
+            <h2>Sign In</h2>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signup')">×</span>
+            <h2>Get Started</h2>
+            <form onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <select>
+                        <option>Select Plan</option>
+                        <option>Starter - $29/month</option>
+                        <option>Professional - $99/month</option>
+                        <option>Enterprise - $299/month</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Get Started</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="demo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('demo')">×</span>
+            <h2>Watch Demo</h2>
+            <div class="demo-video">
+                <img src="https://via.placeholder.com/600x400/0066cc/white?text=Demo+Video+Placeholder" alt="Demo Video">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
